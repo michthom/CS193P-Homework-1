@@ -18,6 +18,10 @@
 		5A51E73C16F673F4002628E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A51E73B16F673F4002628E9 /* Default-568h@2x.png */; };
 		5A51E73F16F673F4002628E9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A51E73D16F673F4002628E9 /* MainStoryboard.storyboard */; };
 		5A51E74216F673F4002628E9 /* HW1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51E74116F673F4002628E9 /* HW1_ViewController.m */; };
+		5A51E75216F6743D002628E9 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51E74B16F6743D002628E9 /* Card.m */; };
+		5A51E75316F6743D002628E9 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51E74D16F6743D002628E9 /* Deck.m */; };
+		5A51E75416F6743D002628E9 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51E74F16F6743D002628E9 /* PlayingCard.m */; };
+		5A51E75516F6743D002628E9 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51E75116F6743D002628E9 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		5A51E73E16F673F4002628E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5A51E74016F673F4002628E9 /* HW1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HW1_ViewController.h; sourceTree = "<group>"; };
 		5A51E74116F673F4002628E9 /* HW1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW1_ViewController.m; sourceTree = "<group>"; };
+		5A51E74A16F6743D002628E9 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		5A51E74B16F6743D002628E9 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		5A51E74C16F6743D002628E9 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		5A51E74D16F6743D002628E9 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		5A51E74E16F6743D002628E9 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		5A51E74F16F6743D002628E9 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		5A51E75016F6743D002628E9 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		5A51E75116F6743D002628E9 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +95,9 @@
 		5A51E72B16F673F4002628E9 /* CS193P Homework 1 */ = {
 			isa = PBXGroup;
 			children = (
-				5A51E73416F673F4002628E9 /* HW1_AppDelegate.h */,
-				5A51E73516F673F4002628E9 /* HW1_AppDelegate.m */,
 				5A51E73D16F673F4002628E9 /* MainStoryboard.storyboard */,
-				5A51E74016F673F4002628E9 /* HW1_ViewController.h */,
-				5A51E74116F673F4002628E9 /* HW1_ViewController.m */,
+				5A51E74916F67415002628E9 /* Model */,
+				5A51E74816F6740D002628E9 /* Controller */,
 				5A51E72C16F673F4002628E9 /* Supporting Files */,
 			);
 			path = "CS193P Homework 1";
@@ -96,6 +106,8 @@
 		5A51E72C16F673F4002628E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A51E73416F673F4002628E9 /* HW1_AppDelegate.h */,
+				5A51E73516F673F4002628E9 /* HW1_AppDelegate.m */,
 				5A51E72D16F673F4002628E9 /* CS193P Homework 1-Info.plist */,
 				5A51E72E16F673F4002628E9 /* InfoPlist.strings */,
 				5A51E73116F673F4002628E9 /* main.m */,
@@ -105,6 +117,30 @@
 				5A51E73B16F673F4002628E9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A51E74816F6740D002628E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A51E74016F673F4002628E9 /* HW1_ViewController.h */,
+				5A51E74116F673F4002628E9 /* HW1_ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5A51E74916F67415002628E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A51E74A16F6743D002628E9 /* Card.h */,
+				5A51E74B16F6743D002628E9 /* Card.m */,
+				5A51E74C16F6743D002628E9 /* Deck.h */,
+				5A51E74D16F6743D002628E9 /* Deck.m */,
+				5A51E74E16F6743D002628E9 /* PlayingCard.h */,
+				5A51E74F16F6743D002628E9 /* PlayingCard.m */,
+				5A51E75016F6743D002628E9 /* PlayingCardDeck.h */,
+				5A51E75116F6743D002628E9 /* PlayingCardDeck.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +213,10 @@
 				5A51E73216F673F4002628E9 /* main.m in Sources */,
 				5A51E73616F673F4002628E9 /* HW1_AppDelegate.m in Sources */,
 				5A51E74216F673F4002628E9 /* HW1_ViewController.m in Sources */,
+				5A51E75216F6743D002628E9 /* Card.m in Sources */,
+				5A51E75316F6743D002628E9 /* Deck.m in Sources */,
+				5A51E75416F6743D002628E9 /* PlayingCard.m in Sources */,
+				5A51E75516F6743D002628E9 /* PlayingCardDeck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
