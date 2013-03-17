@@ -22,7 +22,6 @@
 		5A51E75316F6743D002628E9 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51E74D16F6743D002628E9 /* Deck.m */; };
 		5A51E75416F6743D002628E9 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51E74F16F6743D002628E9 /* PlayingCard.m */; };
 		5A51E75516F6743D002628E9 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51E75116F6743D002628E9 /* PlayingCardDeck.m */; };
-		5A7C3BD816F67A0C009EE53E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C3BD716F67A0C009EE53E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +49,6 @@
 		5A51E74F16F6743D002628E9 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		5A51E75016F6743D002628E9 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		5A51E75116F6743D002628E9 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
-		5A7C3BD716F67A0C009EE53E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +95,6 @@
 		5A51E72B16F673F4002628E9 /* CS193P Homework 1 */ = {
 			isa = PBXGroup;
 			children = (
-				5A7C3BD716F67A0C009EE53E /* README.md */,
 				5A51E73D16F673F4002628E9 /* MainStoryboard.storyboard */,
 				5A51E74916F67415002628E9 /* Model */,
 				5A51E74816F6740D002628E9 /* Controller */,
@@ -203,7 +200,6 @@
 				5A51E73A16F673F4002628E9 /* Default@2x.png in Resources */,
 				5A51E73C16F673F4002628E9 /* Default-568h@2x.png in Resources */,
 				5A51E73F16F673F4002628E9 /* MainStoryboard.storyboard in Resources */,
-				5A7C3BD816F67A0C009EE53E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
